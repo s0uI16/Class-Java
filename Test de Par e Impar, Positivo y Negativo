@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Par_impar {
+    public static void main(String[] args) {
+        Scanner num = new Scanner (System.in);
+        
+        System.out.print("Ingrese un numero que quiera comprobar si es par o no: ");
+        int n = num.nextInt();
+        
+        if (n != 0){
+            if(n>0){
+                System.out.println("El numero es Positivo");
+                if (n % 2 == 0){
+                    System.out.println("Su numero es par");
+                }else{
+                    System.out.println("Su numero es impar");}
+            }else{
+                System.out.println("EL numero es negativo");
+                if (n % 2 == 0){
+                    System.out.println("Su numero es par");}
+                else {System.out.println("Su numero es impar");}
+                }
+            }
+        else{
+            System.out.println("El numero ingresado es neutro");
+       
+        }
+       
+    }
+}
